@@ -1,0 +1,770 @@
+
+	   *********************************************************************************
+					Database of Bank Accounts
+	   *********************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+      Doe        John   495389201           123456            open      Checking   $ 200.55            N/A
+    Smith        Jane   829382947           567890            open       Savings   $1234.56            N/A
+    Jones      Aretha   204958983           987654            open            CD   $   2.33     08/08/2022
+    Brown        Paul   549482928           222222            open      Checking   $5000.00            N/A
+      Liu       Ethan   019210918           333333            open       Savings   $ 999.99            N/A
+    Rizzo       Vince   872948398           654321            open            CD   $ 237.05     02/08/2022
+  Sanchez       Pablo   872346593           111111          closed      Checking   $1200.00            N/A
+Augustine     Francis   958674938           777777          closed       Savings   $  87.50            N/A
+    Liang     Raymond   290289032           666666            open      Checking   $ 973.00            N/A
+   Monroe      Amanda   909839483           121212            open       Savings   $  17.23            N/A
+    Russo       Frank   589382938           800800            open            CD   $   0.59     12/18/2021
+    Ruslo      Franco   589382938           700700            open      Checking   $ 232.49            N/A
+   Miller     Charles   698437859           888888          closed            CD   $ 568.25     05/15/2022
+    Evans         Tim   743984829           284930            open      Checking   $ 777.77            N/A
+    Cyrus     Shirley   838292899           555555            open       Savings   $  87.00            N/A
+   Koslov      Ariana   890943892           444444            open            CD   $   0.00     01/01/2020
+    Logan    Jennifer   094893945           909090            open            CD   $ 100.00     12/20/2024
+ Anniston       James   896484855           600600            open            CD   $  50.00     08/08/2021
+**********************************************************************************************************
+The total amount in all the checking accounts is $8383.81
+The total amount in all the savings accounts is $2426.28
+The total amount in all the CD accounts is $958.22
+The total amount in all types of accounts is $11768.31
+**********************************************************************************************************
+
+Error: z is an invalid option - try again
+
+Error: v is an invalid option - try again
+
+Account Number: 123456 
+Transaction Date: 02/07/2023 
+Transaction Requested: Balance Inquiry 
+Transaction Successful
+Account Balance: $200.55
+
+Account Number: 987654 
+Transaction Date: 02/07/2023 
+Transaction Requested: Balance Inquiry 
+Transaction Successful
+Account Balance: $2.33
+
+Account Number: 999999 
+Transaction Date: 02/07/2023 
+Transaction Requested: Balance Inquiry 
+Error: Account number 999999 does not exist
+
+Account Number: 123456 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $100.25
+Transaction Successful
+Old Balance: $200.55
+New Balance: $300.80
+
+Account Number: 222222 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $800.00
+Transaction Successful
+Old Balance: $5000.00
+New Balance: $5800.00
+
+Account Number: 123456 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $-75.75
+Error: invalid amount entered - amount must be positive
+Old Balance: $300.80
+New Balance: $300.80
+
+Account Number: 989898 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Error: Account number 989898 does not exist
+
+Account Number: 123456 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $50.00
+Transaction Successful (balance less than $2500.00, additional $1.50 charged)
+Old Balance: $300.80
+New Balance: $249.30
+
+Account Number: 800800 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $-20.00
+Error: invalid amount entered - amount must be positive
+Old Balance: $0.59
+New Balance: $0.59
+Post Transaction Maturity Date: 12/18/2021
+
+Account Number: 800800 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $987.00
+Error: Insufficient funds - transaction voided
+Old Balance: $0.59
+New Balance: $0.59
+Post Transaction Maturity Date: 12/18/2021
+
+Account Number: 989898 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Error: Account number 989898 does not exist
+
+Account Number: 565656 
+Transaction Date: 02/07/2023 
+Transaction Requested: New Account Creation 
+Account number 565656 successfully created
+New Account Balance: $10.00
+The number of active accounts is 19
+
+Account Number: 454545 
+Transaction Date: 02/07/2023 
+Transaction Requested: New Account Creation 
+Account number 454545 successfully created
+New Account Balance: $20.00
+Post Transaction Maturity Date: 08/07/2023
+The number of active accounts is 20
+
+Account Number: 343434 
+Transaction Date: 02/07/2023 
+Transaction Requested: New Account Creation 
+Account number 343434 successfully created
+New Account Balance: $10.00
+The number of active accounts is 21
+
+Account Number: 343434 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $10.00
+New Balance: $0.00
+
+Account Number: 948596 
+Transaction Date: 02/07/2023 
+Transaction Requested: New Account Creation 
+Account number 948596 successfully created
+New Account Balance: $10.00
+Post Transaction Maturity Date: 02/07/2024
+The number of active accounts is 22
+
+Account Number: 123456 
+Transaction Date: 02/07/2023 
+Transaction Requested: New Account Creation 
+Error: Account number 123456 already exists
+The number of active accounts is 22
+
+Account Number: 343434 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $20.00
+Transaction Successful
+Old Balance: $0.00
+New Balance: $20.00
+
+Account Number: 343434 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $20.00
+New Balance: $10.00
+
+Account Number: 343434 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $-5.00
+Error: invalid amount entered - amount must be positive
+Old Balance: $10.00
+New Balance: $10.00
+
+Account Number: 343434 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $999.00
+Error: Insufficient funds - transaction voided
+Old Balance: $10.00
+New Balance: $10.00
+
+Account Number: 454545 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $999.00
+Error: CD not matured
+Old Balance: $20.00
+New Balance: $20.00
+Post Transaction Maturity Date: 08/07/2023
+
+Account Number: 454545 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $-1.00
+Error: invalid amount entered - amount must be positive
+Old Balance: $20.00
+New Balance: $20.00
+Post Transaction Maturity Date: 08/07/2023
+
+Account Number: 565656 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $1.00
+Transaction Successful (balance less than $2500.00, additional $1.50 charged)
+Old Balance: $10.00
+New Balance: $7.50
+
+Account Number: 948596 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $21.00
+Error: CD not matured
+Old Balance: $10.00
+New Balance: $10.00
+Post Transaction Maturity Date: 02/07/2024
+
+Account Number: 444444 
+Transaction Date: 02/07/2023 
+Transaction Requested: Account Deletion 
+Current account balance: $0.00
+Transaction Successful - Account Deleted
+The number of active accounts is 21
+
+Account Number: 555555 
+Transaction Date: 02/07/2023 
+Transaction Requested: Account Deletion 
+Current account balance: $87.00
+Error - Cannot delete account with nonzero balance
+The number of active accounts is 21
+
+Account Number: 555555 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $87.00
+Transaction Successful
+Old Balance: $87.00
+New Balance: $0.00
+
+Account Number: 555555 
+Transaction Date: 02/07/2023 
+Transaction Requested: Account Deletion 
+Current account balance: $0.00
+Transaction Successful - Account Deleted
+The number of active accounts is 20
+
+Account Number: 989898 
+Transaction Date: 02/07/2023 
+Transaction Requested: Account Deletion 
+Error: Account number 989898 does not exist
+The number of active accounts is 20
+
+Transaction Requested: Account Info
+Requested SSN: 589382938
+	**************************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+    Russo       Frank   589382938           800800            open            CD   $   0.59     12/18/2021
+    Ruslo      Franco   589382938           700700            open      Checking   $ 232.49            N/A
+	**************************************************************************************
+2 accounts found with requested SSN
+
+Transaction Requested: Account Info
+Requested SSN: 111100000
+Error: no accounts found with requested SSN!
+
+Error: l is an invalid option - try again
+
+Error: t is an invalid option - try again
+
+Account Number: 909090 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $-5.00
+Error: invalid amount entered - amount must be positive
+Old Balance: $100.00
+New Balance: $100.00
+Post Transaction Maturity Date: 12/20/2024
+
+Account Number: 909090 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $5.00
+Error: CD not matured
+Old Balance: $100.00
+New Balance: $100.00
+Post Transaction Maturity Date: 12/20/2024
+
+Account Number: 909090 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $5.00
+Error: CD not matured
+Old Balance: $100.00
+New Balance: $100.00
+Post Transaction Maturity Date: 12/20/2024
+
+Account Number: 600600 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $50.00
+New Balance: $60.00
+Post Transaction Maturity Date: 08/07/2023
+
+Account Number: 654321 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $2.00
+Transaction Successful
+Old Balance: $237.05
+New Balance: $235.05
+Post Transaction Maturity Date: 08/07/2023
+
+Account Number: 884884 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $200.00
+Check Date: 10/10/2022
+***********************************************
+Error: Account number 884884 does not exist
+
+Account Number: 909090 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $200.00
+Check Date: 10/05/2022
+***********************************************
+Error: account entered must be a checking account
+Old balance: $100.00
+New Balance: $100.00
+
+Account Number: 284930 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $-5.00
+Check Date: 09/06/2022
+***********************************************
+Error: invalid amount entered - amount must be positive
+Old balance: $777.77
+New Balance: $777.77
+
+Account Number: 284930 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $1000.00
+Check Date: 10/01/2022
+***********************************************
+Error: Insufficient funds - transaction voided and $2.50 fee applied
+Old balance: $777.77
+New Balance: $775.27
+
+Account Number: 284930 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $200.00
+Check Date: 08/08/2020
+***********************************************
+Error: check too old - date of check must be within the past 6 months
+Old balance: $775.27
+New Balance: $775.27
+
+Account Number: 284930 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $100.00
+Check Date: 10/02/2022
+***********************************************
+Transaction Successful (balance less than $2500.00, additional $1.50 charged)
+Old balance: $775.27
+New Balance: $673.77
+
+Account Number: 284930 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $200.00
+Check Date: 08/10/2040
+***********************************************
+Error: check has future date - date of check must be within the past 6 months
+Old balance: $673.77
+New Balance: $673.77
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $10.00
+Error: Account is currently closed - please reopen and try again
+Old Balance: $1200.00
+New Balance: $1200.00
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $100.00
+Check Date: 10/10/2022
+***********************************************
+Error: Account is currently closed - please reopen and try again
+Old balance: $1200.00
+New Balance: $1200.00
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Reopen Account 
+Transaction Successful - Account Reopened
+Account Balance: $1200.00
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $1200.00
+New Balance: $1210.00
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Balance Inquiry 
+Transaction Successful
+Account Balance: $1210.00
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+***********************************************
+Check Amount: $200.00
+Check Date: 10/10/2022
+***********************************************
+Transaction Successful (balance less than $2500.00, additional $1.50 charged)
+Old balance: $1210.00
+New Balance: $1008.50
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $2000.00
+Transaction Successful
+Old Balance: $1008.50
+New Balance: $3008.50
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $25.00
+Transaction Successful
+Old Balance: $3008.50
+New Balance: $2983.50
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Close Account 
+Transaction Successful - Account Closed
+Account Balance: $2983.50
+
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Close Account 
+Error: account is already closed
+
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $10.00
+Error: Account is currently closed - please reopen and try again
+Old Balance: $568.25
+New Balance: $568.25
+Post Transaction Maturity Date: 05/15/2022
+
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Reopen Account 
+Transaction Successful - Account Reopened
+Account Balance: $568.25
+
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Reopen Account 
+Error: account is already open
+
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $568.25
+New Balance: $558.25
+Post Transaction Maturity Date: 08/07/2023
+
+Transaction Requested: Account Info Plus Transaction History
+Requested SSN: 698437859
+	**************************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+   Miller     Charles   698437859           888888            open            CD   $ 558.25     08/07/2023
+	**************************************************************************************
+1 accounts found with requested SSN
+
+Transaction History
+*******************************
+Account Number: 888888
+------------------------------
+Transaction #1
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $10.00
+Error: Account is currently closed - please reopen and try again
+Old Balance: $568.25
+New Balance: $568.25
+Post Transaction Maturity Date: 05/15/2022
+------------------------------
+Transaction #2
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Reopen Account 
+Transaction Successful - Account Reopened
+Account Balance: $568.25
+------------------------------
+Transaction #3
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Reopen Account 
+Error: account is already open
+------------------------------
+Transaction #4
+Account Number: 888888 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $568.25
+New Balance: $558.25
+Post Transaction Maturity Date: 08/07/2023
+------------------------------
+
+
+Transaction Requested: Account Info Plus Transaction History
+Requested SSN: 872346593
+	**************************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+  Sanchez       Pablo   872346593           111111          closed      Checking   $2983.50            N/A
+	**************************************************************************************
+1 accounts found with requested SSN
+
+Transaction History
+*******************************
+Account Number: 111111
+------------------------------
+Transaction #1
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $10.00
+Error: Account is currently closed - please reopen and try again
+Old Balance: $1200.00
+New Balance: $1200.00
+------------------------------
+Transaction #2
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+Amount of Check: $100.00
+Error: Account is currently closed - please reopen and try again
+Old balance: $1200.00
+New Balance: $1200.00
+------------------------------
+Transaction #3
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Reopen Account 
+Transaction Successful - Account Reopened
+Account Balance: $1200.00
+------------------------------
+Transaction #4
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $10.00
+Transaction Successful
+Old Balance: $1200.00
+New Balance: $1210.00
+------------------------------
+Transaction #5
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Balance Inquiry 
+Transaction Successful
+Account Balance: $1210.00
+------------------------------
+Transaction #6
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Clear Check 
+Amount of Check: $200.00
+Transaction Successful (balance less than $2500.00, additional $1.50 charged)
+Old balance: $1210.00
+New Balance: $1008.50
+------------------------------
+Transaction #7
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $2000.00
+Transaction Successful
+Old Balance: $1008.50
+New Balance: $3008.50
+------------------------------
+Transaction #8
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $25.00
+Transaction Successful
+Old Balance: $3008.50
+New Balance: $2983.50
+------------------------------
+Transaction #9
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Close Account 
+Transaction Successful - Account Closed
+Account Balance: $2983.50
+------------------------------
+Transaction #10
+Account Number: 111111 
+Transaction Date: 02/07/2023 
+Transaction Requested: Close Account 
+Error: account is already closed
+------------------------------
+
+
+Transaction Requested: Account Info Plus Transaction History
+Requested SSN: 589382938
+	**************************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+    Russo       Frank   589382938           800800            open            CD   $   0.59     12/18/2021
+    Ruslo      Franco   589382938           700700            open      Checking   $ 232.49            N/A
+	**************************************************************************************
+2 accounts found with requested SSN
+
+Transaction History
+*******************************
+Account Number: 800800
+------------------------------
+Transaction #1
+Account Number: 800800 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $-20.00
+Error: invalid amount entered - amount must be positive
+Old Balance: $0.59
+New Balance: $0.59
+Post Transaction Maturity Date: 12/18/2021
+------------------------------
+Transaction #2
+Account Number: 800800 
+Transaction Date: 02/07/2023 
+Transaction Requested: Withdrawal 
+Amount of Transaction: $987.00
+Error: Insufficient funds - transaction voided
+Old Balance: $0.59
+New Balance: $0.59
+Post Transaction Maturity Date: 12/18/2021
+------------------------------
+
+Account Number: 700700
+------------------------------
+No transactions found under this account number
+
+
+Transaction Requested: Account Info Plus Transaction History
+Requested SSN: 958674938
+	**************************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+Augustine     Francis   958674938           777777          closed       Savings   $  87.50            N/A
+	**************************************************************************************
+1 accounts found with requested SSN
+
+Transaction History
+*******************************
+Account Number: 777777
+------------------------------
+No transactions found under this account number
+
+
+Transaction Requested: Account Info Plus Transaction History
+Requested SSN: 989894347
+	**************************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+    Jesse        Tomb   989894347           454545            open            CD   $  20.00     08/07/2023
+	**************************************************************************************
+1 accounts found with requested SSN
+
+Transaction History
+*******************************
+Account Number: 454545
+------------------------------
+Transaction #1
+Account Number: 454545 
+Transaction Date: 02/07/2023 
+Transaction Requested: New Account Creation 
+Account number 454545 successfully created
+New Account Balance: $20.00
+Post Transaction Maturity Date: 08/07/2023
+------------------------------
+Transaction #2
+Account Number: 454545 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $999.00
+Error: CD not matured
+Old Balance: $20.00
+New Balance: $20.00
+Post Transaction Maturity Date: 08/07/2023
+------------------------------
+Transaction #3
+Account Number: 454545 
+Transaction Date: 02/07/2023 
+Transaction Requested: Deposit 
+Amount of Transaction: $-1.00
+Error: invalid amount entered - amount must be positive
+Old Balance: $20.00
+New Balance: $20.00
+Post Transaction Maturity Date: 08/07/2023
+------------------------------
+
+
+
+	   *********************************************************************************
+					Database of Bank Accounts
+	   *********************************************************************************
+Last Name  First Name         SSN   Account Number  Account Status  Account Type    Balance  Maturity Date
+      Doe        John   495389201           123456            open      Checking   $ 249.30            N/A
+    Smith        Jane   829382947           567890            open       Savings   $1234.56            N/A
+    Jones      Aretha   204958983           987654            open            CD   $   2.33     08/08/2022
+    Brown        Paul   549482928           222222            open      Checking   $5800.00            N/A
+      Liu       Ethan   019210918           333333            open       Savings   $ 999.99            N/A
+    Rizzo       Vince   872948398           654321            open            CD   $ 235.05     08/07/2023
+  Sanchez       Pablo   872346593           111111          closed      Checking   $2983.50            N/A
+Augustine     Francis   958674938           777777          closed       Savings   $  87.50            N/A
+    Liang     Raymond   290289032           666666            open      Checking   $ 973.00            N/A
+   Monroe      Amanda   909839483           121212            open       Savings   $  17.23            N/A
+    Russo       Frank   589382938           800800            open            CD   $   0.59     12/18/2021
+    Ruslo      Franco   589382938           700700            open      Checking   $ 232.49            N/A
+   Miller     Charles   698437859           888888            open            CD   $ 558.25     08/07/2023
+    Evans         Tim   743984829           284930            open      Checking   $ 673.77            N/A
+    Erica         Lee   878749348           343434            open       Savings   $  10.00            N/A
+      Ali       Abeer   567876433           948596            open            CD   $  10.00     02/07/2024
+    Logan    Jennifer   094893945           909090            open            CD   $ 100.00     12/20/2024
+ Anniston       James   896484855           600600            open            CD   $  60.00     08/07/2023
+    Pablo     Sanchez   294343434           565656            open      Checking   $   7.50            N/A
+    Jesse        Tomb   989894347           454545            open            CD   $  20.00     08/07/2023
+**********************************************************************************************************
+The total amount in all the checking accounts is $10919.56
+The total amount in all the savings accounts is $2349.28
+The total amount in all the CD accounts is $986.22
+The total amount in all types of accounts is $14255.06
+**********************************************************************************************************
+

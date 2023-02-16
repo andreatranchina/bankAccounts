@@ -1,0 +1,24 @@
+123456 200.55 Checking 495389201 Doe John open
+567890 1234.56 Savings 829382947 Smith Jane open
+987654 2.33 CD 204958983 Jones Aretha 08/08/2022 open
+222222 5000.00 Checking 549482928 Brown Paul open
+333333 999.99 Savings 019210918 Liu Ethan open
+654321 237.05 CD 872948398 Rizzo Vince 02/08/2022 open
+111111 1200.00 Checking 872346593 Sanchez Pablo closed
+777777 87.50 Savings 958674938 Augustine Francis closed
+666666 973.00 Checking 290289032 Liang Raymond open
+121212 17.23 Savings 909839483 Monroe Amanda open
+800800 0.59 CD 589382938 Russo Frank 12/18/2021 open
+700700 232.49 Checking 589382938 Ruslo Franco open
+888888 568.25 CD 698437859 Miller Charles 05/15/2022 closed
+284930 777.77 Checking 743984829 Evans Tim open
+555555 87.00 Savings 838292899 Cyrus Shirley open
+444444 0.00 CD 890943892 Koslov Ariana 01/01/2020 open
+909090 100.00 CD 094893945 Logan Jennifer 12/20/2024 open
+600600 50.00 CD 896484855 Anniston James 08/08/2021 open
+
+
+
+
+
+
