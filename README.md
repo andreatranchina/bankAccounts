@@ -1,1 +1,9 @@
 # bankAccounts
+This program allows the user to simulate an ATM machine.
+An initial database of bank accounts (CD, checking or savings) are read in using a scanner from InitDatabase.txt
+A scanner will then be used to read through myTestCases.txt, allowing to simulate transactions such as: withdrawals, deposits, check curent account balance, create new account, delete existing account, temporarily close an account, reopen an account, clear check (only valid for checking accounts), and obtain account info history (history of transaction for an account). 
+The user can modify myTestCases.txt and InitDatabase.txt to try different operations but they demonstrate all possible operations as they are currently found and filled.
+After each operation is completed, a transaction receipt is printed to Output.txt and is also stored for each account in a separate binary random access file in the form of fixed length records (.dat files). The information on all the accounts is also stored in a binary random access file in the form of fixed length records (in .dat file). The stored receipts for each accounts is necessary for the account info history operation to obtain the history of transactions of an account.
+Different characteristics for each account (checking, savings, CDs) are allowed through the use of different classes. Checking account is one class, Savings account is another, and CD account is implemented as a child class which extends Savings account. Clear check operations are only allowed in checking accounts, and CD accounts have certain time constraints on withdrawals due to maturity dates.
+Custom Exception classes are created and used in the program.
+The program uses object oriented programming concepts such as classes, inheritance, polymorphism, object serialization and reading/writing fixed length records.
